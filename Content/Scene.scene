@@ -33,6 +33,7 @@
 			"ID": "bc81376747666609b0974580a21519a1",
 			"TypeName": "FlaxEngine.Sky",
 			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"IsActive": false,
 			"Name": "Sky",
 			"Transform": {
 				"Translation": {
@@ -48,6 +49,7 @@
 			"ID": "da5e1c454a56377517d41686ebb0348f",
 			"TypeName": "FlaxEngine.EnvironmentProbe",
 			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"IsActive": false,
 			"Name": "Environment Probe",
 			"Transform": {
 				"Translation": {
@@ -62,6 +64,7 @@
 			"ID": "deecf0894777293a4f478dadacf2a6f8",
 			"TypeName": "FlaxEngine.DirectionalLight",
 			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"IsActive": false,
 			"Name": "Directional Light",
 			"Transform": {
 				"Translation": {
@@ -87,6 +90,7 @@
 			"ID": "eb18e84d41670d6314174b89a1d5ffea",
 			"TypeName": "FlaxEngine.SkyLight",
 			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"IsActive": false,
 			"Name": "SkyLight",
 			"Transform": {
 				"Translation": {
@@ -130,19 +134,27 @@
 			"ID": "b156371e470a32e6bd2cd6bd29f6e455",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "OursideField"
+			"Name": "Cyllinders",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 20.0,
+					"Z": 0.0
+				}
+			}
 		},
 		{
 			"ID": "4d324bb547b69cbce1d27f866bfed6c7",
 			"TypeName": "Game.Field",
 			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
-			"V": {}
+			"V": {},
+			"Enabled": false
 		},
 		{
-			"ID": "0c14041c41039594001224bd8ceea525",
+			"ID": "a82cff1b45705b10bc46feb68d23fe24",
 			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
-			"Name": "Cylinder",
+			"Name": "Cylinder 1",
 			"Transform": {
 				"Translation": {
 					"X": 200.0,
@@ -151,7 +163,7 @@
 				},
 				"Scale": {
 					"X": 0.5,
-					"Y": 1.0,
+					"Y": 0.20000000298023225,
 					"Z": 0.5
 				}
 			},
@@ -159,8 +171,317 @@
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "00000000000000000000000000000000",
+						"Material": "68cc8ac44268341212139994f76fc9aa",
+						"ShadowsMode": 1,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "bd7e33594278a0f26c8903b49b09cd69",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
+			"Name": "Cylinder 2",
+			"Transform": {
+				"Translation": {
+					"X": 161.8000030517578,
+					"Y": 0.0,
+					"Z": 117.55000305175781
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.20000000298023225,
+					"Z": 0.5
+				}
+			},
+			"Model": "223aa9894e90973780ab508621517526",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "68cc8ac44268341212139994f76fc9aa",
+						"ShadowsMode": 0,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "23feda7b40b8f2f3933412aebee0b89d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
+			"Name": "Cylinder 3",
+			"Transform": {
+				"Translation": {
+					"X": 61.79999923706055,
+					"Y": 0.0,
+					"Z": 190.0
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.20000000298023225,
+					"Z": 0.5
+				}
+			},
+			"Model": "223aa9894e90973780ab508621517526",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "68cc8ac44268341212139994f76fc9aa",
+						"ShadowsMode": 0,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "7931c66645b64af17db8c882abd9a6b4",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
+			"Name": "Cylinder 4",
+			"Transform": {
+				"Translation": {
+					"X": -61.79999923706055,
+					"Y": 0.0,
+					"Z": 190.2100067138672
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.20000000298023225,
+					"Z": 0.5
+				}
+			},
+			"Model": "223aa9894e90973780ab508621517526",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "68cc8ac44268341212139994f76fc9aa",
 						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "f7821ab1433625aa6786dc99954b5da1",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
+			"Name": "Cylinder 5",
+			"Transform": {
+				"Translation": {
+					"X": -161.8000030517578,
+					"Y": 0.0,
+					"Z": 117.55000305175781
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.20000000298023225,
+					"Z": 0.5
+				}
+			},
+			"Model": "223aa9894e90973780ab508621517526",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "68cc8ac44268341212139994f76fc9aa",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "7ae093f7448d1d7251c2ab8aaee36fee",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
+			"Name": "Cylinder 6",
+			"Transform": {
+				"Translation": {
+					"X": -200.0,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.20000000298023225,
+					"Z": 0.5
+				}
+			},
+			"Model": "223aa9894e90973780ab508621517526",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "68cc8ac44268341212139994f76fc9aa",
+						"ShadowsMode": 0,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "82c9655d496502b02c0943ae4ed0a4b2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
+			"Name": "Cylinder 7",
+			"Transform": {
+				"Translation": {
+					"X": -161.8000030517578,
+					"Y": 0.0,
+					"Z": -117.55000305175781
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.20000000298023225,
+					"Z": 0.5
+				}
+			},
+			"Model": "223aa9894e90973780ab508621517526",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "68cc8ac44268341212139994f76fc9aa",
+						"ShadowsMode": 0,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "78215dfb4c080a19c9451fa9cb065cd7",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
+			"Name": "Cylinder 8",
+			"Transform": {
+				"Translation": {
+					"X": -61.79999923706055,
+					"Y": 0.0,
+					"Z": -190.2100067138672
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.20000000298023225,
+					"Z": 0.5
+				}
+			},
+			"Model": "223aa9894e90973780ab508621517526",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "68cc8ac44268341212139994f76fc9aa",
+						"ShadowsMode": 0,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "9c8aeb2545ceeaede64da2972fa6bf02",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
+			"Name": "Cylinder 9",
+			"Transform": {
+				"Translation": {
+					"X": 61.79999923706055,
+					"Y": 0.0,
+					"Z": -190.2100067138672
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.20000000298023225,
+					"Z": 0.5
+				}
+			},
+			"Model": "223aa9894e90973780ab508621517526",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "68cc8ac44268341212139994f76fc9aa",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "06c3980c4d322e94722143a3399b2144",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
+			"Name": "Cylinder 10",
+			"Transform": {
+				"Translation": {
+					"X": 161.8000030517578,
+					"Y": 0.0,
+					"Z": -117.55000305175781
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.20000000298023225,
+					"Z": 0.5
+				}
+			},
+			"Model": "223aa9894e90973780ab508621517526",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "68cc8ac44268341212139994f76fc9aa",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "70bddc514d992eadc352dc8cfd831be8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "MiddleField",
+			"Transform": {
+				"Scale": {
+					"X": 5.0,
+					"Y": 0.10000000149011612,
+					"Z": 5.0
+				}
+			},
+			"Model": "223aa9894e90973780ab508621517526",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "5277fa9846b23d4508ce0ab3e5879e3f",
+						"ShadowsMode": 0,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "df65ede544bb0073bab5f8aef56f929b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "OuterField",
+			"Transform": {
+				"Scale": {
+					"X": 10.0,
+					"Y": 0.009999999776482582,
+					"Z": 10.0
+				}
+			},
+			"Model": "223aa9894e90973780ab508621517526",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "68cc8ac44268341212139994f76fc9aa",
+						"ShadowsMode": 0,
 						"Visible": true,
 						"ReceiveDecals": true
 					}

@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "Game": {
+      "commandName": "Executable",
+      "workingDirectory": "E:\\Flax\\Projects\\CircularSonata",
+      "executablePath": "E:\\Flax\\Engine\\Flax1.6\\Binaries\\Editor\\Win64\\Development\\FlaxEditor.exe",
+      "commandLineArgs": "-project \"E:\\Flax\\Projects\\CircularSonata\"",
+      "nativeDebugging": false
+    }
+  }
+}

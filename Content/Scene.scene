@@ -1,7 +1,7 @@
 {
 	"ID": "74a68a984824b4510d12589f199ad68f",
 	"TypeName": "FlaxEngine.SceneAsset",
-	"EngineBuild": 6333,
+	"EngineBuild": 6344,
 	"Data": [
 		{
 			"ID": "74a68a984824b4510d12589f199ad68f",
@@ -105,84 +105,67 @@
 			"Name": "Camera",
 			"Transform": {
 				"Translation": {
-					"X": -198.75326538085938,
-					"Y": 196.89071655273438,
-					"Z": 190.70037841796876
+					"X": 0.0,
+					"Y": 1000.0,
+					"Z": 0.0
 				},
 				"Orientation": {
-					"X": 0.06189095228910446,
-					"Y": 0.9198267459869385,
-					"Z": -0.1617070734500885,
-					"W": 0.35204988718032839
+					"X": 0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
 				}
 			},
-			"StaticFlags": 0
+			"StaticFlags": 0,
+			"UsePerspective": false
 		},
 		{
 			"ID": "9053ad38428b10594c741db78d7fcca5",
 			"TypeName": "FreeCamera",
 			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
+			"V": {},
+			"Enabled": false
+		},
+		{
+			"ID": "b156371e470a32e6bd2cd6bd29f6e455",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "OursideField"
+		},
+		{
+			"ID": "4d324bb547b69cbce1d27f866bfed6c7",
+			"TypeName": "Game.Field",
+			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
 			"V": {}
 		},
 		{
-			"ID": "4a9d87134ab42f4294db6bbcf1902bde",
+			"ID": "0c14041c41039594001224bd8ceea525",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Floor",
-			"Transform": {
-				"Scale": {
-					"X": 10.0,
-					"Y": 0.5,
-					"Z": 10.0
-				}
-			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "382f1ae946c519eff6e6f3a2965cf56b",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "4a7045e748c74e3de29afd8856f99205",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "4a9d87134ab42f4294db6bbcf1902bde",
-			"Name": "BoxCollider"
-		},
-		{
-			"ID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Cube",
+			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
+			"Name": "Cylinder",
 			"Transform": {
 				"Translation": {
-					"X": 6.8406219482421879,
-					"Y": 61.59697723388672,
-					"Z": -84.26880645751953
+					"X": 200.0,
+					"Y": 0.0,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 1.0,
+					"Z": 0.5
 				}
 			},
-			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Model": "223aa9894e90973780ab508621517526",
 			"Buffer": {
 				"Entries": [
 					{
-						"Material": "8391b6da40053a988a0959ab9f26f700",
+						"Material": "00000000000000000000000000000000",
 						"ShadowsMode": 3,
 						"Visible": true,
 						"ReceiveDecals": true
 					}
 				]
 			}
-		},
-		{
-			"ID": "f05185004d85b1695fc5b1ae710ba373",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
-			"Name": "BoxCollider"
 		}
 	]
 }

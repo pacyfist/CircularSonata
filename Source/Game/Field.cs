@@ -2,35 +2,43 @@
 using System.Collections.Generic;
 using FlaxEngine;
 
-namespace Game
+namespace Game;
+
+public class Field : Script
 {
-    /// <summary>
-    /// Field Script.
-    /// </summary>
-    public class Field : Script
+    public Actor Collection { get; set; }
+
+    private Actor[] spawners;
+
+    /// <inheritdoc/>
+    public override void OnStart()
     {
-        /// <inheritdoc/>
-        public override void OnStart()
-        {
-            // Here you can add code that needs to be called when script is created, just before the first game update
-        }
-        
-        /// <inheritdoc/>
-        public override void OnEnable()
-        {
-            // Here you can add code that needs to be called when script is enabled (eg. register for events)
-        }
+        spawners = Collection.Children;
+    }
 
-        /// <inheritdoc/>
-        public override void OnDisable()
-        {
-            // Here you can add code that needs to be called when script is disabled (eg. unregister from events)
-        }
+    /// <inheritdoc/>
+    public override void OnEnable()
+    {
+        // Here you can add code that needs to be called when script is enabled (eg. register for events)
+    }
 
-        /// <inheritdoc/>
-        public override void OnUpdate()
-        {
-            // Here you can add code that needs to be called every frame
-        }
+    /// <inheritdoc/>
+    public override void OnDisable()
+    {
+        // Here you can add code that needs to be called when script is disabled (eg. unregister from events)
+    }
+
+    /// <inheritdoc/>
+    public override void OnFixedUpdate()
+    {
+        Matrix.RotationY(0.005f, out var rot);
+
+        Actor.Rotation *= rot;
+
+        // foreach (var s in spawners)
+        // {
+        //     s.RotateAround(Vector3.Zero, Vector3.Up, 1f);
+        // }
     }
 }
+

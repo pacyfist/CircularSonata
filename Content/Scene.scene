@@ -147,8 +147,9 @@
 			"ID": "4d324bb547b69cbce1d27f866bfed6c7",
 			"TypeName": "Game.Field",
 			"ParentID": "b156371e470a32e6bd2cd6bd29f6e455",
-			"V": {},
-			"Enabled": false
+			"V": {
+	"Collection": "b156371e470a32e6bd2cd6bd29f6e455"
+}
 		},
 		{
 			"ID": "a82cff1b45705b10bc46feb68d23fe24",

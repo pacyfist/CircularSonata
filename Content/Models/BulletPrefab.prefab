@@ -1,0 +1,41 @@
+{
+	"ID": "74bb3423466629f9c7ea0ab99bf91b5f",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6344,
+	"Data": [
+	{
+		"ID": "63bf72ff496cf729d100ea8992a1f570",
+		"TypeName": "FlaxEngine.StaticModel",
+		"Name": "Bullet",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 5.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.7071068286895752,
+				"Y": 0.0,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			},
+			"Scale": {
+				"X": 0.5,
+				"Y": 0.5,
+				"Z": 0.5
+			}
+		},
+		"Model": "1b4a643d44706750b2e35ea4e11e3663",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "a8819edf42cc8b14bc0be8b3e6881e5a",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

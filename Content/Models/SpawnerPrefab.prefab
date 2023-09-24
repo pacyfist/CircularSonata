@@ -1,0 +1,35 @@
+{
+	"ID": "3554305b4a0b4c2575e3a48558117d96",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6344,
+	"Data": [
+	{
+		"ID": "67cc3d9747522c8b20ec91b968652c7a",
+		"TypeName": "FlaxEngine.StaticModel",
+		"Name": "Cylinder",
+		"Transform": {
+			"Translation": {
+				"X": 200.0,
+				"Y": 0.0,
+				"Z": 0.0
+			},
+			"Scale": {
+				"X": 0.5,
+				"Y": 0.20000000298023225,
+				"Z": 0.5
+			}
+		},
+		"Model": "223aa9894e90973780ab508621517526",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "68cc8ac44268341212139994f76fc9aa",
+					"ShadowsMode": 1,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

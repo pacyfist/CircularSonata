@@ -29,10 +29,10 @@ public class Mediator
         Scripting.FixedUpdate += OnFixedUpdate;
         Scripting.Exit += OnExit;
 
-        //if (Engine.IsEditor)
-        //{
-        //    FlaxEditor.Editor.Instance.PlayModeEnd += OnExit;
-        //}
+        if (Engine.IsEditor)
+        {
+           FlaxEditor.Editor.Instance.PlayModeEnd += OnExit;
+        }
     }
 
     private void OnExit()
@@ -42,10 +42,10 @@ public class Mediator
         Scripting.FixedUpdate -= OnFixedUpdate;
         Scripting.Exit -= OnExit;
 
-        //if (Engine.IsEditor)
-        //{
-        //    FlaxEditor.Editor.Instance.PlayModeEnd -= OnExit;
-        //}
+        if (Engine.IsEditor)
+        {
+           FlaxEditor.Editor.Instance.PlayModeEnd -= OnExit;
+        }
 
         _global = null;
     }

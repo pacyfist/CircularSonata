@@ -3,9 +3,9 @@ using System;
 
 namespace Flaxible;
 
-public class FlaxibleModule : GamePlugin
+public class Flaxible : GamePlugin
 {
-    public FlaxibleModule()
+    public Flaxible()
     {
         _description = new PluginDescription
         {

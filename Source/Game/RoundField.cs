@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Game;
 
-public class RoundField : MediatedScript
+public class RoundField : AsyncScript
 {
     public Prefab SpawnerPrefab { get; set; }
 
@@ -82,7 +82,7 @@ public class RoundField : MediatedScript
         }, cancellationToken);
 
 
-        mediator.SubscribeTo<AddSpawner>((message) =>
+        Mediator.Global.SubscribeTo<AddSpawner>((message) =>
         {
             SpawnSpawner();
         });

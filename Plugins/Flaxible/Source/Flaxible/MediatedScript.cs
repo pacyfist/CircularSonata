@@ -4,11 +4,9 @@ using System.Threading.Tasks;
 
 namespace Flaxible;
 
-public class MediatedScript : Script
+public class AsyncScript : Script
 {
     protected CancellationTokenSource cancellationTokenSource = new();
-
-    protected Mediator mediator = Mediator.Global;
 
     public virtual Task OnAwakeAsync(CancellationToken cancellationToken)
         => Task.CompletedTask;

@@ -66,26 +66,20 @@ public class RoundField : AsyncScript
 
     public override Task OnStartAsync(CancellationToken cancellationToken)
     {
+        Mediator.Global.SubscribeTo<AddGunner>((message) =>
+        {
+            SpawnSpawner();
+        });
+
         Task.Run(async () =>
         {
             for (int i = 0; i < 5; i++)
             {
-                if (cancellationToken.IsCancellationRequested)
-                {
-                    break;
-                }
-
-                Mediator.Global.Publish(new AddSpawner());
-
                 await EngineTime.Delay(60, cancellationToken);
+
+                Mediator.Global.Publish(new AddGunner());
             }
         }, cancellationToken);
-
-
-        Mediator.Global.SubscribeTo<AddSpawner>((message) =>
-        {
-            SpawnSpawner();
-        });
 
         return Task.CompletedTask;
     }

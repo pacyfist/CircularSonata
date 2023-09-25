@@ -2,7 +2,7 @@
 
 namespace Game.Game.Messages
 {
-    public class AddSpawner : Mediator.Message
+    public class AddGunner : Mediator.Message
     {
     }
 }

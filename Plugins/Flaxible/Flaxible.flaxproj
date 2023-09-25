@@ -4,7 +4,7 @@
 	"Company": "",
 	"Copyright": "",
 	"GameTarget": "FlaxibleTarget",
-	"EditorTarget": "FlaxibleTarget",
+	"EditorTarget": "FlaxibleEditorTarget",
 	"References": [
 		{
 			"Name": "$(EnginePath)/Flax.flaxproj"

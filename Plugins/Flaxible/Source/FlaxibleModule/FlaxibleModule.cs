@@ -15,7 +15,7 @@ public class FlaxibleModule : GamePlugin
             AuthorUrl = null,
             HomepageUrl = null,
             RepositoryUrl = "https://github.com/Pacyfist/FlaxiblePlugin",
-            Description = "This is an example plugin project.",
+            Description = "This is a library of Flax extensions used for async game development.",
             Version = new Version(0, 0, 1),
             IsAlpha = true,
             IsBeta = false,
